@@ -1,4 +1,5 @@
 import 'package:component/components/BottomSheetCom.dart';
+import 'package:component/components/BreadCrumbCom.dart';
 import 'package:component/components/Button.dart';
 import 'package:component/components/ButtonSlideCom.dart';
 import 'package:component/components/CalendarCom.dart';
@@ -246,6 +247,17 @@ class Home extends StatelessWidget {
               ButtonComponent(
                 title: 'File upload',
                 onPressed: () => Get.to(FileUploadCom()),
+                textSize: 16,
+                backgroundColor: Colors.white,
+                boxShadowOpacity: 0,
+                rightIcon: Icon(Icons.arrow_forward_ios_sharp,
+                    size: 18, color: Colors.black),
+                borderColor: Color.fromRGBO(112, 112, 112, 0.3),
+              ),
+              SizedBox(height: 10),
+              ButtonComponent(
+                title: 'Breadcrumb',
+                onPressed: () => Get.to(BreadcrumbCom()),
                 textSize: 16,
                 backgroundColor: Colors.white,
                 boxShadowOpacity: 0,
